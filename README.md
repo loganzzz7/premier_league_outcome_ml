@@ -19,4 +19,9 @@ AwayGoals
 Away
 FTR (Full Time Result)
 
-## 
+## Examining the data
+### Class imbalance check:
+None--distribution (45% home win, 28% away win, 25% draw)
+
+### Model decision:
+Classification problem -> Logistic Regression Model
