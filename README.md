@@ -25,3 +25,6 @@ None--distribution (45% home win, 28% away win, 25% draw)
 
 ### Model decision:
 Classification problem -> Logistic Regression Model
+
+## Training
+Sklearn
