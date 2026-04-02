@@ -65,3 +65,20 @@ predictions = model.predict(X_test)
 # undo label transformation
 pred_labels = le_result.inverse_transform(predictions[:10])
 print(f"prediction labels:\n", pred_labels)
+
+
+# Testing
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+import seaborn as sns
+
+print(f"Accuracy Score:\n", accuracy_score(y_test, predictions))
+
+print(f"Classification Report (precision, recall, f1):\n", classification_report(y_test, predictions, target_names=le_result.classes_))
+
+cm = confusion_matrix(y_test, predictions)
+sns.heatmap(cm, annot=True, fmt='d', 
+            xticklabels=['Away Win', 'Draw', 'Home Win'],
+            yticklabels=['Away Win', 'Draw', 'Home Win'])
+
+plt.savefig('confusion_matrix_heatmap.png', dpi=100, bbox_inches='tight')
+# plt.show()

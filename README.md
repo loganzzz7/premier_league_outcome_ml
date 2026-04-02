@@ -28,3 +28,13 @@ Classification problem -> Logistic Regression Model
 
 ## Training
 Sklearn
+
+## Testing
+Using classification_report:
+-> heavy bias towards predicting Home Win
+
+## What I Learned:
+How to start a ml project, how to find data, how to train a model, how to determine if a model is good (while being aware of class imbalance)
+
+## Next Steps:
+Train my tennis model!
